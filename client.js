@@ -14,6 +14,9 @@ const connect = function() {
 
   console.log('Successfully connected to game server!');
   conn.write('Name: Cam');
+  // setInterval(() => {
+  //   conn.write('Move: up')
+  // }, 500);
 
   return conn;
 }
