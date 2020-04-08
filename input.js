@@ -16,10 +16,10 @@ const handleUserInput = function(data) {
   if (data === 'd') {
     connection.write('Move: right')
   }
-  if (data = 't') {
+  if (data === 't') {
     connection.write('Say: Move Please!')
   }
-  if (data = 'y') {
+  if (data === 'y') {
     connection.write('Say: Whoa That Was Close!')
   }
 }
