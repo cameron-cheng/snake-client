@@ -7,6 +7,14 @@ const connect = function() {
     port: 50541
   });
 
+  conn.on('connect', function() {
+    console.log('Connected');
+    conn.write('Name: Cam')
+  })
+  conn.on('data', (data) => {
+    console.log(data);
+  });
+
   return conn;
 }
 
